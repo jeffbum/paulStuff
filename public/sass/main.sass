@@ -1,0 +1,112 @@
+@import materialize
+@import url("https://fonts.googleapis.com/css?family=Barrio")
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch")
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker")
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono")
+
+.nav-wrapper a
+  color: black
+  font-family: "Cabin Sketch", cursive
+  font-size: 35px
+
+  &:hover
+    background-color: #009688
+
+//ME CONTAINER
+.me-container
+  font-family: "Barrio", cursive
+
+.avatar
+  display: flex
+  background-image: url("../assets/me2.jpg")
+  background-attachment: fixed
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  height: auto
+
+.avatar-content
+  margin: auto
+  color: white
+
+//ABOUT SECTION
+.about h3
+  font-family: "Permanent Marker", cursive
+  padding-bottom: 20px
+  padding-top: 80px
+  width: 100%
+  height: auto
+
+.about-blurb
+  font-family: 'Roboto Mono', monospace
+  font-size: 25px
+  padding-bottom: 25px
+
+.resume-section
+  font-family: "Cabin Sketch", cursive
+  padding-bottom: 80px
+
+.modal-content img
+  width: 100%
+
+//PROJECTS SECTION
+.work
+
+  & h3
+     font-family: "Permanent Marker", cursive
+
+.card-container
+  padding: 50px
+
+  & img
+     max-width: 100%
+     height: auto
+
+.project-blurb
+  font-family: 'Roboto Mono', monospace
+  font-size: 17px
+
+.links li
+  display: inline-flex
+  padding: 10px
+
+  & a
+    color: black
+
+.links h3
+  font-family: "Permanent Marker", cursive
+
+.antispam
+  display: none
+
+#contact h3
+  font-family: "Permanent Marker", cursive
+  padding-top: 80px
+
+//FOOTER
+
+.ring
+  display: none
+
+.email a
+  font-size: 20px
+  color: black
+
+//MEDIA QUERIES
+
+$breakpoint-phone: 370px
+@media (max-width: $breakpoint-phone)
+  .nav-wrapper
+    font-size: 20px
+
+  #contact
+    display: none
+
+  .resume-section
+    display: none
+
+  .ring
+    display: block
+
+    & a
+      color: green

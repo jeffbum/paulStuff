@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
 
+import Header from './Header'
+
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -11,8 +13,11 @@ class Homepage extends React.Component {
     }
 
     render(){
-        return (
-            <div>Hello World</div>
+        return(
+        <div className="container">
+          <Header />
+          <div>Hello World</div>
+        </div>
         )
     }
 }

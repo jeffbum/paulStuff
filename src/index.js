@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
 //component imports
 import App from './App'
-import Homepage from './Homepage'
+import Homepage from './components/Homepage'
 
 
 
